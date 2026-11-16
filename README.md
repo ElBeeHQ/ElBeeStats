@@ -65,7 +65,13 @@ Version 1.0.0 can't update itself: download the newest disk image from the
 - **Assets:** a sortable, searchable table of every file, with its details, SHA-256 digest, download link and release
   notes.
 - **Menu bar:** downloads in the last 24 hours and 7 days, the total, and this week's top repositories. Refreshes keep
-  running after the window is closed, and the app can open at login.
+  running after the window is closed, and the app can open at login. Turn off **Show in Dock** to keep it in the menu
+  bar only.
+- **New installs vs updates:** see how many downloads are people installing for the first time and how many are
+  installed copies updating (a .zip beside a .dmg, as Sparkle apps ship), per release and over the last 7 days.
+- **Notes on charts:** mark what happened on a date, such as a post or an announcement, and see it on the history and
+  trend charts next to your releases.
+- **Weekly summary** every Monday: your downloads this week against last week, and your top repositories.
 - **Notifications** for download milestones, new releases, new repositories in accounts you follow, sudden jumps in
   downloads and refresh problems. Each can be turned off.
 - **Share** a summary picture, or copy a download badge for your README.

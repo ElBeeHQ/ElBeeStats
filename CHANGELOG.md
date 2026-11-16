@@ -1,5 +1,20 @@
 # Changelog
 
+## v1.2.0: Installs, notes and a weekly summary
+
+See who's installing for the first time and who's updating, mark what happened on your charts, and get a summary of your week every Monday.
+
+### Added
+
+- **New installs vs updates:** a new card on Overview splits downloads into new installs (installers such as a .dmg) and updates (the .zip that installed copies update from, as ElBee Stats and ElBee Player ship). It shows each total, the last 7 days, updates per install, and both for each recent release.
+- **Notes on charts:** choose **Add Note…** on Download History to note something on a date, such as a post or an announcement. Notes show as solid lines on the history and trend charts, next to the dashed release lines, and are listed under the chart where you can delete them.
+- **Weekly summary:** on Monday mornings, a notification gives your downloads in the last 7 days against the week before, and your top repositories. Turn it off in **Settings › Notifications**, or choose **Show This Week's Summary** to see it now.
+- **Menu bar only:** turn off **Show in Dock** in **Settings › Background** to keep ElBee Stats in the menu bar without a Dock icon.
+
+### Changed
+
+- **Menu bar icon:** the menu bar now shows the app icon's monitor and rising arrow instead of a download arrow, so it no longer looks like a download manager.
+
 ## v1.1.1: Opens again
 
 Version 1.1.0 quit as soon as it was opened. This release fixes that.
