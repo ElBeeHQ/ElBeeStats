@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-  Free for personal use · macOS 14 or later · Apple Silicon and Intel
+  Free for personal use · macOS 14 or later · Apple Silicon and Intel · Updates itself
 </p>
 
 ---
@@ -43,9 +43,14 @@ new release.
 
 ## Updates
 
-To update, download the newest disk image from the [releases page](https://github.com/ElBeeHQ/ElBeeStats/releases)
-and drag ElBee Stats onto Applications again, choosing **Replace**. Your repositories, history and settings are kept.
-See the [changelog](CHANGELOG.md) for what changed in each release.
+ElBee Stats updates itself. It checks once a day, or open **Settings → General → Updates** and choose **Check for
+Updates Now…** (also in the **ElBee Stats** menu). Updates are downloaded from this repository and checked against
+ElBee Stats' signing key before they're installed, then the app restarts. Your repositories, history and settings are
+kept.
+
+Version 1.0.0 can't update itself: download the newest disk image from the
+[releases page](https://github.com/ElBeeHQ/ElBeeStats/releases) once and drag it onto Applications, choosing
+**Replace**. See the [changelog](CHANGELOG.md) for what changed in each release.
 
 ## Highlights
 
@@ -88,7 +93,8 @@ read-only access to **Contents** and **Administration** (for traffic) is enough.
 
 - **No telemetry, analytics, accounts, advertising or tracking.** Nothing is sent to the developer.
 - **The only network connections it makes** are to GitHub, to read release, repository and traffic information and
-  profile pictures. As with any web request, GitHub can see your IP address.
+  profile pictures, and to check for and download updates. You can turn automatic update checks off in Settings →
+  General → Updates. As with any web request, GitHub can see your IP address and the app version.
 - **Your token** is stored in the macOS Keychain and is only ever sent to GitHub.
 - **Your history** stays on your Mac, inside the app's sandbox.
 - **App Sandbox:** the app runs in the macOS App Sandbox, with network access and access to the files you choose when
