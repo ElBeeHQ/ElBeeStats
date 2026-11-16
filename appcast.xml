@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>ElBee Stats</title>
+        <link>https://github.com/ElBeeHQ/ElBeeStats</link>
+        <description>Updates for ElBee Stats</description>
+        <language>en</language>
+        <item>
+            <title>Version 1.1.0</title>
+            <pubDate>Mon, 16 Nov 2026 03:25:56 GMT</pubDate>
+            <sparkle:version>1.1.0</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description>&lt;div style="font-family: -apple-system, sans-serif; font-size: 13px;"&gt;&lt;style&gt;.sparkle-installed-version, .sparkle-installed-version ~ .release { display: none; } .release h2 { font-size: 15px; margin: 14px 0 4px; } .release:first-of-type h2 { margin-top: 0; }&lt;/style&gt;&lt;div class="release" data-sparkle-version="1.1.0"&gt;&lt;h2&gt;Version 1.1.0&lt;/h2&gt;&lt;p&gt;ElBee Stats now updates itself, and a GitHub token that stops working no longer stops you following accounts.&lt;/p&gt;
+&lt;h4&gt;Added&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Updates:&lt;/strong&gt; ElBee Stats checks for new versions once a day and installs them for you, then restarts. Choose &lt;strong&gt;Check for Updates…&lt;/strong&gt; in the ElBee Stats menu, or use &lt;strong&gt;Settings › General › Updates&lt;/strong&gt; to check now or turn automatic checks off. Every update is checked against ElBee Stats' signing key before it's installed.&lt;/li&gt;&lt;/ul&gt;
+&lt;h4&gt;Fixed&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Following accounts with a token:&lt;/strong&gt; if GitHub rejected your saved token (for example because it had expired, been revoked or wasn't copied in full), following an account and refreshing repositories failed with "GitHub rejected the Personal Access Token". ElBee Stats now carries on with public access, says so in Settings and in the Add window, and notifies you once.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Saving a token:&lt;/strong&gt; a new token is now checked with GitHub before it's saved. If GitHub doesn't accept it, it isn't saved and the reason shows in red, so it can't replace a working one.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;p style="margin-top: 16px; opacity: 0.7;"&gt;Every release: &lt;a href="https://github.com/ElBeeHQ/ElBeeStats/releases"&gt;ElBee Stats on GitHub&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description>
+            <enclosure url="https://github.com/ElBeeHQ/ElBeeStats/releases/download/v1.1.0/ElBeeStats-1.1.0.zip" length="4117225" type="application/octet-stream" sparkle:edSignature="KOb6CI/D/Sde0sd06A0U9Kgiq+a4qEUBKhE/Do1O1umKtxYdFnxjk+7Mmh3djS0Tq7HqsZcqc0uFTzEpVQ96CA==" />
+        </item>
+    </channel>
+</rss>
