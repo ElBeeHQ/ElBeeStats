@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.3.2: Made by ElBeeHQ
+
+### Added
+
+- **Made by ElBeeHQ:** the About window and **Settings › General** now show ElBeeHQ's logo. Click it in Settings to open ElBeeHQ on GitHub. ElBee Stats keeps its own icon.
+
 ## v1.3.1: A new icon
 
 ElBee Stats has a new icon, so it no longer looks like ElBee Player.
