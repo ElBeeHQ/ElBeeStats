@@ -1,5 +1,21 @@
 # Changelog
 
+## v1.3.3: ElBeeHQ's wordmark
+
+*16 November 2026*
+
+### Changed
+
+- **Made by ElBeeHQ:** the credit in the About window and **Settings › General** now uses ElBeeHQ's drawn wordmark, the same one as on ElBeeHQ's website and in its other apps. The About window also links to ElBeeHQ.com beneath it.
+
+### Fixed
+
+- **Star history without a token:** GitHub now shares stargazer dates only with a Personal Access Token. Without one, loading star history said the token had been rejected; the Star History card now explains that a token is needed, and the button waits until one is added.
+
+### For contributors
+
+- **Demo mode** (`ELBEE_STATS_DEMO=1`, for screenshots) shows made-up repositories and runs only in a demo copy with its own bundle identifier, made with `Scripts/make-demo-app.sh`, so a demo run can't change the real app's settings. It's compiled only into Debug builds and that demo copy (the `DEMO` condition), never into a release, and `Scripts/check-no-demo.sh` stops a release that contains any of it.
+
 ## v1.3.2: Made by ElBeeHQ
 
 ### Added
