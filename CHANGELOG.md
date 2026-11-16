@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.3.1: A new icon
+
+ElBee Stats has a new icon, so it no longer looks like ElBee Player.
+
+### Changed
+
+- **App icon:** a honeycomb cell with a rising line replaces the screen on a stand, which was too easy to mistake for ElBee Player's TV. It keeps the same cream, ink and amber. The menu bar icon and the mark beside the ElBee Stats name change to match.
+
 ## v1.3.0: Stars, launches and a desktop widget
 
 See how your stars grew from the very first one, compare how each release launched, and keep an eye on downloads from your desktop.
