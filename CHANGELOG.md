@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.1.1: Opens again
+
+Version 1.1.0 quit as soon as it was opened. This release fixes that.
+
+### Fixed
+
+- **ElBee Stats quit at launch:** 1.1.0 couldn't load the part of the app that installs updates, so macOS closed it straight away. It opens normally again, and updates work from this version on.
+
 ## v1.1.0: Updates and token fixes
 
 ElBee Stats now updates itself, and a GitHub token that stops working no longer stops you following accounts.
