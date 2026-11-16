@@ -71,6 +71,10 @@ Version 1.0.0 can't update itself: download the newest disk image from the
   installed copies updating (a .zip beside a .dmg, as Sparkle apps ship), per release and over the last 7 days.
 - **Notes on charts:** mark what happened on a date, such as a post or an announcement, and see it on the history and
   trend charts next to your releases.
+- **Star history:** your stars over the repository's whole life, from the date each one was given.
+- **Release launches:** each release's first 30 days laid over the others, with downloads by day 1, 7 and 30.
+- **Desktop widget:** total downloads, the last 24 hours and a 7-day chart for any public repository, on your
+  desktop or in Notification Center.
 - **Weekly summary** every Monday: your downloads this week against last week, and your top repositories.
 - **Notifications** for download milestones, new releases, new repositories in accounts you follow, sudden jumps in
   downloads and refresh problems. Each can be turned off.
@@ -102,6 +106,8 @@ read-only access to **Contents** and **Administration** (for traffic) is enough.
   profile pictures, and to check for and download updates. You can turn automatic update checks off in Settings →
   General → Updates. As with any web request, GitHub can see your IP address and the app version.
 - **Your token** is stored in the macOS Keychain and is only ever sent to GitHub.
+- **The widget** reads public release information from GitHub by itself, without your token, and keeps its own short
+  history on your Mac.
 - **Your history** stays on your Mac, inside the app's sandbox.
 - **App Sandbox:** the app runs in the macOS App Sandbox, with network access and access to the files you choose when
   you export, and nothing else.

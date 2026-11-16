@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.3.0: Stars, launches and a desktop widget
+
+See how your stars grew from the very first one, compare how each release launched, and keep an eye on downloads from your desktop.
+
+### Added
+
+- **Star history:** a new card on Overview draws your stars over the repository's whole life, from the date each one was given. Choose **Load Star History** to fetch it. Repositories with more than 2,400 stars are sampled, which keeps it to 24 requests.
+- **Release launches:** lays each release's first 30 days over the others from the day it came out, so you can see whether launches are getting bigger. A table gives each release's downloads by day 1, day 7 and day 30. It appears once two releases have come out while ElBee Stats was refreshing.
+- **Desktop widget:** add **Downloads** to your desktop or Notification Center, then right-click it, choose **Edit "Downloads"** and enter a repository. It shows total downloads, the last 24 hours and the latest release, and the medium size adds a chart of the last 7 days. The widget reads public repositories from GitHub by itself about once an hour, so recent figures fill in over its first day.
+
 ## v1.2.0: Installs, notes and a weekly summary
 
 See who's installing for the first time and who's updating, mark what happened on your charts, and get a summary of your week every Monday.
