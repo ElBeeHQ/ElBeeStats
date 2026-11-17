@@ -1,5 +1,24 @@
 # Changelog
 
+## v1.3.4: Downloads per Release you can find your way around
+
+*17 November 2026*
+
+### Changed
+
+- **Downloads per Release shows where you are.** When a repository has more releases than fit, the chart opens on the newest ones, and a line above it says which are showing and how many there are. Older and Newer buttons beside it page through the rest, so you can move along with a mouse, the keyboard or VoiceOver, as well as by scrolling sideways. Scrolling always comes to rest on whole bars.
+
+### Fixed
+
+- **Version numbers in Downloads per Release are no longer cut off.** They're written level and whole under each bar, and the chart shows only as many releases as their names fit at the window's width. The pop-up for a release you click sits just above its bar, inside the chart, so it's never cut off or drawn over the card's title. When the chart scrolls, the scroll bar sits between the bars and the version numbers, never on top of them.
+- **New Installs vs Updates no longer squashes its version numbers together** in a narrow window. It shows the newest releases whose numbers fit and says how many of the last 12 are shown.
+
+### For contributors
+
+- **Demo mode** has a fourth made-up repository, `example-org/photo-tidy`, with 32 releases, so the scrolling chart can be checked and captured.
+
+- **Debug builds have their own bundle identifier** (`io.github.elbeehq.ElBeeStats.debug`, and `.debug.Widget` for the widget). A Debug build, including the copy that hosts the unit tests, used to share the release's identifier while being signed with the development team, so macOS gave it the release's data container. A release that was already running was then refused its own container: it couldn't save settings, and updating failed with "An error occurred while downloading the update". A test checks the identifier, and `Scripts/publish-release.sh` stops a release whose identifier isn't `io.github.elbeehq.ElBeeStats`.
+
 ## v1.3.3: ElBeeHQ's wordmark
 
 *16 November 2026*
