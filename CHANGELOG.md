@@ -1,5 +1,27 @@
 # Changelog
 
+## v1.4.0: What changed, and who downloaded it
+
+*19 November 2026*
+
+See what each refresh brought in, and how many of your downloads were likely people.
+
+### Added
+
+- **What changed since the last refresh.** After you refresh (the toolbar, the sidebar, ⌘R, ⇧⌘R or the menu bar), each repository in the sidebar whose downloads went up shows a small green "+50" under its count, and an account's **All Repositories** shows the sum. Point at a row to see its new downloads, stars, forks and releases. The figures stay for an hour or until your next refresh, then fade. After **Refresh All** or refreshing an account, a banner at the bottom of the window gives the totals, and the menu bar shows the same line, with "+N" beside each of the week's top repositories. Scheduled refreshes, a repository's first refresh and refreshes that fail don't show it.
+- **Estimated People.** Turn on **Settings › General › Estimate downloads by people** to see an **Estimated People** card beside Total Asset Downloads. It leaves out downloads that look automated (bots, CI jobs or mirrors fetching files again): a burst far above the repository's usual rate, one file of a new release spiking far above the others, or every file rising by the same amount at once. Point at the card to see what was left out and why. It's an estimate, it covers only the time ElBee Stats has been taking snapshots, and the total itself never changes. Off by default.
+- **Homebrew installs beside GitHub downloads.** Link a Homebrew cask or formula to a repository (right-click it in the sidebar and choose **Link Homebrew…**, or use the button in its Overview) and a **Downloads by Source** card shows GitHub downloads and Homebrew installs for the last 30, 90 or 365 days, with the total of every way people get it. A cask that downloads its file from your GitHub releases is already counted in GitHub's figure, so the card says so and doesn't add it twice. Homebrew only shares installs for the last 30, 90 and 365 days, never a lifetime total. The figures are fetched with your refreshes, at most once a day, from Homebrew's public website. No account or token is needed.
+
+- **History with no gaps.** ElBee Stats can only take snapshots while it's running, so a sleeping Mac leaves gaps. A small GitHub Action you add to a repository of your own (private is fine) now saves your download counts, stars and traffic once a day, and ElBee Stats adds those to its history. It never changes the snapshots it took itself. Set it up in **Settings › History**: **Copy Workflow** and **Copy Repository List** give you the two files, and the steps are beside them.
+
+### Fixed
+
+- **Star history with a fine-grained token.** If your token isn't set up for a public repository, GitHub answers as if the repository didn't exist, so loading its star history said "Not found" and suggested the name was wrong. ElBee Stats now says your token can't reach that repository and how to fix it: add the repository to the token in GitHub's settings, or choose All repositories (read-only is enough). Refresh errors say the same.
+
+### For contributors
+
+- **Demo mode** has two more commands for captures: `refresh-change` shows the refresh banner, and `mirror-burst` gives the selected repository a mirror-like burst for the estimate.
+
 ## v1.3.4: Downloads per Release you can find your way around
 
 *17 November 2026*
