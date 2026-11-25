@@ -1,5 +1,34 @@
 # Changelog
 
+## v1.4.1: Works out of the box, and easier to read
+
+*25 November 2026*
+
+New installs refresh on their own, the widget keeps its figures when it can't reach GitHub, and text on amber is dark and easy to read.
+
+### Changed
+
+- **Auto-refresh is on for new installs**, every 6 hours, so history, the "+N" figures, the weekly summary and notifications work from the start. If you already use ElBee Stats, your setting is kept, including Off. Change it in **Settings › General**.
+- **Dark text on amber.** A selected repository in the sidebar, the selected choice in pickers such as **30 days | 90 days | 365 days**, and the amber default button in sheets and the menu bar (**Add**, **Link**, **Open ElBee Stats**) had white text on amber, which was hard to read. That text is now dark, in Light and Dark Mode, as in ElBee Player. If you chose a blue, pink, purple or graphite accent colour in System Settings, those keep white text on it.
+- **Amber lines and figures in Light Mode** use a deeper amber, so they stand out on white: chart lines and points, release markers, progress bars, the widget's "+164 in 24 hours" and its icon. Bars and other filled areas keep the brighter amber.
+- **"Stats" in the menu bar's wordmark** uses deeper ambers in Light Mode, so it no longer fades into light glass. The share card's wordmark uses them too.
+- **Fewer requests.** When nothing has changed on GitHub since the last refresh, GitHub answers "not modified", which doesn't count against your hourly limit. A repository whose traffic your token can't see is asked again after a day, when you change your token or when you refresh that repository on its own, not at every refresh.
+
+### Fixed
+
+- **The widget keeps its last figures** when your Mac is offline or GitHub's hourly limit is reached, and says when they're from ("Updated 14:05"), instead of showing only an error. It now reads every release of a repository, not just the newest 100.
+- **The refresh error explains itself.** When refreshing a repository failed, the alert showed GitHub's bare answer even where ElBee Stats knew more, such as a fine-grained token that isn't set up for a public repository. The alert and the notification now give the same explanation as the sidebar.
+- **History from the GitHub Action no longer dips** when **Count update & checksum files as downloads** is on. Days imported from the Action are corrected once when you open ElBee Stats.
+- **Settings › History** is tall enough to show **Copy Workflow** and **Copy Repository List** without scrolling, and a history repository you've typed is kept when you close Settings or switch tab, even without pressing Return.
+- **A history repository with a very large file list** is read folder by folder, so no snapshot files are missed.
+- **Exported CSV files are safe to open in a spreadsheet.** A release or file name that starts with =, +, - or @ is written as text, so a spreadsheet can't treat it as a formula. Numbers are unchanged.
+- **Charts with a long history** are quicker: each snapshot's file counts are read once and kept, instead of at every redraw.
+
+### For contributors
+
+- Next-page links are followed only on `https://api.github.com`, and a list stops after 100 pages (10,000 items) with an error rather than a partial list.
+- `AmberContrastPreviewTests` renders a selected sidebar row and the wordmark in Light and Dark Mode as test attachments.
+
 ## v1.4.0: What changed, and who downloaded it
 
 *19 November 2026*
